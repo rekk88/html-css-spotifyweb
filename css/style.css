@@ -43,5 +43,6 @@ footer.row{
     width: 100%;
 }
 body{
+    /* da togliere appena eliminati i bordi esterni dei container e delle row */
     overflow: hidden;
 }
