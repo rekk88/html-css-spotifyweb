@@ -1,0 +1,20 @@
+/* .box{
+    min-height: 100px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.box-nested{
+    min-height: 100px;
+    border: 1px solid white;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.row{
+    background-color: lightcoral;
+} */
