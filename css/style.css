@@ -49,6 +49,9 @@ h2 , h5{
     font-size: 30px;
     text-transform: capitalize;
 }
+.gallery .row.artisti img{
+    border-radius: 50%;
+}
 .gallery .nested-box>img{
     width: 100%;
 }
