@@ -103,7 +103,9 @@ body{
 
 .debug .nested-box{
     min-height: 150px;
-    width: 170px;
+    /* width: 170px; */
+    width: calc((100% / 6) - 20px);
+    min-width: 170px;
     background-color: transparent;
     padding: 10px;
 
