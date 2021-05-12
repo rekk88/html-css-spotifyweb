@@ -1,5 +1,6 @@
 
 body{
+    color: white;
     background-color: #141922;
 }
 
@@ -20,7 +21,16 @@ body{
     width: 100%;
     overflow-y: auto;
 }
-
+.gallery nav.row{
+    justify-content: center;
+}
+.gallery nav.row ul{
+    text-align: center;
+}
+.gallery nav.row ul>li{
+    display: inline-block;
+    margin: 0 10px;
+}
 
 /* footer */
 footer.row{
