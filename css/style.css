@@ -30,6 +30,8 @@ body{
 .gallery nav.row ul>li{
     display: inline-block;
     margin: 0 10px;
+    text-transform: uppercase;
+    line-height: 4;
 }
 
 /* footer */
@@ -69,4 +71,11 @@ body{
 
 
     /* overflow-y: auto; da vedere se necessario piu avanti!!  */
+}
+
+.debug .nested-box{
+    height: 150px;
+    width: 100%;
+    background-color: yellow;
+    
 }
