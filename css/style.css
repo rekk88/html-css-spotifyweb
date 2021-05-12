@@ -18,3 +18,25 @@
 .row{
     background-color: lightcoral;
 } */
+
+.debug [class*="col-"] {
+    background-color: lightsalmon;
+    border: 1px solid;
+    /* min-height: 500px; */
+}
+.debug .upgrade-bar{
+    height: 70px;
+    background-color: grey;
+    border: 1px solid;
+    width: 100%;
+}
+.gallery{
+    min-height: 700px;
+    background-color: orange;
+    width: 100%;
+}
+footer.row{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
