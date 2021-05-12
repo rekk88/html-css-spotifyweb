@@ -75,7 +75,11 @@ body{
 
 .debug .nested-box{
     height: 150px;
-    width: 100%;
+    width: 150px;
     background-color: yellow;
-    
+
+}
+
+.debug .row.recently > .col-xs-2{
+
 }
