@@ -11,11 +11,20 @@ h2 , h5{
     width: 100%;
 }
 .container-fluid{
-    height: 100%
+    /* height: 100% */
+    height: calc(100vh - 100px); /*100 viewport - altezza del footer*/
+}
+
+.main{
+    height: 100%;
+}
+.col-xs-2{
+    height: 100%;
 }
 /*   SIDEBAR    */
 .row.sidebar{
-    flex-flow: column wrap;
+    flex-flow: column;
+    overflow: hidden;
     padding: 5px;
 }
 
@@ -26,21 +35,29 @@ h2 , h5{
 
 .sidebar-top{
     /* height: 90%; */
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    height: calc(100% - 100px);
+    /* overflow: hidden; non dovrebbe essere necessario*/
+    min-height: 380px;
 }
 .sidebar-bottom{
     /* height: 10%; */
+    height: 100px;
 }
 .playlist{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
+
 .playlist-bottom{
     /* height: 100px; */
-    height: calc(100vh - 500px);
+    /* height: calc(100vh - 500px); */
+    height: 60%;
     overflow-y: auto;
     background-color: saddlebrown;
-    flex-grow: 1;
+
+    /* flex-grow: 1; */
 }
 
 /* main content top bar(.upgrade-bar) + main (gallery) */
@@ -107,9 +124,9 @@ footer.row{
     width: 100%;
     background-color: #282828;
 
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* z-index: 1; */
 }
 
 
@@ -125,6 +142,7 @@ footer.row{
     /* min-height: 200px; */
     background-color: royalblue;
     width: 100%;
+    border: 1px solid;
 }
 
 .debug [class*="col-"] {
