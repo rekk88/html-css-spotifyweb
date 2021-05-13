@@ -23,9 +23,24 @@ h2 , h5{
 .sidebar nav{
     margin-bottom: 5px;
 }
+
+.sidebar-top{
+    /* height: 90%; */
+    flex-grow: 1;
+}
+.sidebar-bottom{
+    /* height: 10%; */
+}
+.playlist{
+    display: flex;
+    flex-direction: column;
+}
 .playlist-bottom{
-    height: 100px;
+    /* height: 100px; */
+    height: calc(100vh - 500px);
     overflow-y: auto;
+    background-color: saddlebrown;
+    flex-grow: 1;
 }
 
 /* main content top bar(.upgrade-bar) + main (gallery) */
@@ -107,7 +122,7 @@ footer.row{
 }
 .debug .sidebar-top,
 .debug .sidebar-bottom{
-    min-height: 200px;
+    /* min-height: 200px; */
     background-color: royalblue;
     width: 100%;
 }
