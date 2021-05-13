@@ -13,11 +13,20 @@ h2 , h5{
 .container-fluid{
     height: 100%
 }
-
+/*   SIDEBAR    */
 .row.sidebar{
     flex-flow: column wrap;
+    padding: 5px;
 }
 
+.sidebar .logo,
+.sidebar nav{
+    margin-bottom: 5px;
+}
+.playlist-bottom{
+    height: 100px;
+    overflow-y: auto;
+}
 
 /* main content top bar(.upgrade-bar) + main (gallery) */
 .upgrade-bar{
