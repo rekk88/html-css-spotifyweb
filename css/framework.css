@@ -17,6 +17,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+.mb-15{ 
+    margin-bottom: 15px;
+}
 
 [class*="col-"] {
     flex: 0 0 auto;
