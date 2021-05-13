@@ -13,6 +13,13 @@ h2 , h5{
 .container-fluid{
     height: 100%
 }
+
+.row.sidebar{
+    flex-flow: column wrap;
+}
+
+
+/* main content top bar(.upgrade-bar) + main (gallery) */
 .upgrade-bar{
     height: 70px;
     position: relative;
@@ -84,6 +91,18 @@ footer.row{
 
 /* debug */
 
+.debug .row.sidebar{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+}
+.debug .sidebar-top,
+.debug .sidebar-bottom{
+    min-height: 200px;
+    background-color: royalblue;
+    width: 100%;
+}
+
 .debug [class*="col-"] {
     /* background-color: lightsalmon; */
     border: 1px solid;
@@ -100,7 +119,7 @@ body{
 }
 
 .debug .box{
-    height: 900px;
+    /* height: 900px; */
     width: 100%;
     /* border: 2px solid white; */
     /* background-color: teal; */
@@ -116,9 +135,5 @@ body{
     min-width: 170px;
     background-color: transparent;
     padding: 10px;
-
-}
-
-.debug .row.recently > .col-xs-2{
 
 }
