@@ -18,7 +18,15 @@
             <div class="col-left">
                 <div class="row sidebar between-xs">
                     <div class="sidebar-top">
-                        <div class="logo">sono un logo </div>
+                        <!-- logo visualizzato con width >= 576px -->
+                        <div class="logo"> 
+                            <img src="img/logo.svg" alt="logo">
+                        </div>
+                        <!-- logo visualizzato con width < 576px -->
+                        <div class="logo-mobile">
+                            <img src="img/logo-small.svg" alt="logo mobile">
+                        </div>
+                        <!-- menu sidebar top -->
                         <nav>
                             <ul>
                                 <li>Home</li>
@@ -26,6 +34,8 @@
                                 <li>la tua libreria</li>
                             </ul>
                         </nav>
+                        <!-- fine menu sidebar top -->
+                        
                         <div class="playlist">
                             <div class="playlist-top mb-15">
                                 playlist header

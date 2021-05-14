@@ -19,9 +19,6 @@ h2 , h5{
 .main{
     height: 100%;
 }
-.col-xs-2{
-    height: 100%;
-}
 .col-left{
     min-width: 70px;
     max-width: 70px;
@@ -30,12 +27,17 @@ h2 , h5{
 .sidebar-bottom{
     overflow:hidden;
 }
+
+
+/*regole desktop per la colonna di sinistra*/
 @media screen and (min-width: 576px) {
     .col-left{
         min-width: 230px;
         max-width: 230px;
     }
 }
+
+
 /*   SIDEBAR    */
 .row.sidebar{
     flex-flow: column;
@@ -47,6 +49,31 @@ h2 , h5{
 .sidebar nav{
     margin-bottom: 5px;
 }
+
+/* regole mobile */
+.sidebar .logo{
+    display: none;
+    width: 160px;
+
+}
+.sidebar .logo-mobile{
+    
+    width: 100%;
+}
+
+/* regole desktop */
+@media screen and (min-width:576px) {
+  
+    .sidebar .logo-mobile{
+        display: none;
+    }
+    .sidebar .logo{
+        display: block;
+
+    }
+
+}
+
 
 .sidebar-top{
     /* height: 90%; */
@@ -163,7 +190,7 @@ footer.row{
 
 .debug [class*="col-"] {
     /* background-color: lightsalmon; */
-    border: 1px solid;
+    border: 1px solid;  /*da togliere successivamente (sta disallineando sidebar e main row )*/
     /* min-height: 500px; */
 }
 .debug .upgrade-bar{
