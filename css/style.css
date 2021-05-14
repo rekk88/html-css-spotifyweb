@@ -1,4 +1,5 @@
 
+
 body{
     color: white;
     background-color: #141922;
@@ -20,6 +21,20 @@ h2 , h5{
 }
 .col-xs-2{
     height: 100%;
+}
+.col-left{
+    min-width: 70px;
+    max-width: 70px;
+    height: 100%;
+}
+.sidebar-bottom{
+    overflow:hidden;
+}
+@media screen and (min-width: 576px) {
+    .col-left{
+        min-width: 230px;
+        max-width: 230px;
+    }
 }
 /*   SIDEBAR    */
 .row.sidebar{
@@ -55,6 +70,7 @@ h2 , h5{
     /* height: calc(100vh - 500px); */
     height: 60%;
     overflow-y: auto;
+    overflow-x: hidden; /*al 99% da togliere una volta completata la media query per small */
     background-color: saddlebrown;
 
     /* flex-grow: 1; */
