@@ -50,14 +50,12 @@ h2 , h5{
     margin-bottom: 5px;
 }
 
-/* regole mobile */
+/* regole mobile (le width restano invariate e quindi inutile riperterle nella media query */
 .sidebar .logo{
     display: none;
     width: 160px;
-
 }
 .sidebar .logo-mobile{
-    
     width: 100%;
 }
 
@@ -106,16 +104,17 @@ h2 , h5{
 /* main content top bar(.upgrade-bar) + main (gallery) */
 .upgrade-bar{
     height: 70px;
-    position: relative;
+    position: fixed;
     top: 0px;
-    z-index: 10;
+    z-index: 9; /*funziona anche con z-index = a quello di footer ma just in case lo metto a 9*/
     background-color:rgba(8, 11, 18, 0.5);
 }
 .gallery{
     /* min-height: 700px; */
-    height: calc(100vh - 170px);
+    height: calc(100vh - 100px);
     /* background-color: orange; */
     width: 100%;
+    padding-top: 80px;
     overflow-y: auto;
 }
 
@@ -166,11 +165,14 @@ footer.row{
     height: 100px;
     width: 100%;
     background-color: #282828;
-
+    position: relative;
     /* position: fixed; */
     /* bottom: 0; */
-    /* z-index: 1; */
+    z-index: 10;
 }
+
+
+
 
 
 /* debug */
