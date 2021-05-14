@@ -23,6 +23,7 @@ h2 , h5{
     min-width: 70px;
     max-width: 70px;
     height: 100%;
+    background-color: black;
 }
 .sidebar-bottom{
     overflow:hidden;
@@ -34,7 +35,9 @@ h2 , h5{
     .col-left{
         min-width: 230px;
         max-width: 230px;
+        padding: 10px;
     }
+
 }
 
 
@@ -45,9 +48,21 @@ h2 , h5{
     padding: 5px;
 }
 
+.sidebar .sidebar-top nav{
+    color: grey;
+    font-weight: bold;
+}
+.sidebar .sidebar-top nav img{
+    filter: invert(20%);
+}
 .sidebar .logo,
 .sidebar nav{
     margin-bottom: 5px;
+}
+
+
+.logo{
+    margin-top: 10px;
 }
 
 /* regole mobile (le width restano invariate e quindi inutile riperterle nella media query */
@@ -80,14 +95,37 @@ h2 , h5{
     /* overflow: hidden; non dovrebbe essere necessario*/
     min-height: 380px;
 }
-.sidebar-bottom{
-    /* height: 10%; */
-    height: 100px;
+
+.sidebar-top > nav > ul {
+    list-style: none;
 }
+.sidebar-top > nav > ul li,
+.playlist-top div{
+    line-height: 30px;
+}
+
+/*img icone svg*/
+.sidebar-top > nav > ul li img{
+    height: 30px;
+    vertical-align: middle;
+}
+.sidebar-bottom{
+    height: 100px;
+    min-height: 100px;
+    background-color: black;
+}
+
 .playlist{
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+.playlist-top > h3{
+    margin-bottom:5px;
+}
+.playlist-top div > i{
+    font-size: 40px;
+    vertical-align: middle;
 }
 
 .playlist-bottom{
@@ -178,21 +216,21 @@ footer.row{
 /* debug */
 
 .debug .row.sidebar{
-    background-color: red;
+    /* background-color: red; */
     height: 100%;
     width: 100%;
 }
 .debug .sidebar-top,
 .debug .sidebar-bottom{
     /* min-height: 200px; */
-    background-color: royalblue;
+    /* background-color: royalblue; */
     width: 100%;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .debug [class*="col-"] {
     /* background-color: lightsalmon; */
-    border: 1px solid;  /*da togliere successivamente (sta disallineando sidebar e main row )*/
+    /* border: 1px solid;  da togliere successivamente (sta disallineando sidebar e main row ) */
     /* min-height: 500px; */
 }
 .debug .upgrade-bar{
