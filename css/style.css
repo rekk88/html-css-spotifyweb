@@ -1,6 +1,7 @@
 
 
 body{
+    overflow: hidden;
     color: white;
     background-color: #141922;
     font-family: 'Montserrat', sans-serif;
@@ -242,7 +243,7 @@ h2 , h5{
     z-index: 9; /*funziona anche con z-index = a quello di footer ma just in case lo metto a 9*/
     background-color:rgba(8, 11, 18, 0.5);
 
-    width: calc(100vw - 86px); /*mobile*/
+    width: calc(100vw - 70px); /*mobile*/
 }
 @media screen and (min-width:576px) {
     .upgrade-bar{
@@ -419,7 +420,13 @@ footer .right{
 footer .center{
     flex-basis: 50%;
 }
-@media screen and (max-width:515px) {
+
+
+/*         cantiere aperto / zona esperimenti           */
+
+
+
+/* @media screen and (max-width:515px) {
     footer .left{
         display: none;
     }
@@ -434,8 +441,32 @@ footer .center{
         transform: rotate(90deg);
         
     }
+} */
+body{
+    /* overflow: visible; */
 }
-
+/* footer.row{
+    flex-direction: column;
+} */
+@media screen and (min-width:515px) {
+    /* footer{
+        min-height: 100px;
+    }
+    footer.row{
+        flex-flow: column wrap;
+    }
+    footer .left,
+    footer .center,
+    footer .right{
+        width: 100%;
+    } */
+    footer.row{
+        /* flex-direction: row; */
+    }
+    body{
+        /* overflow:  */
+    }
+}
 /* debug */
 
 .debug .left,
@@ -474,7 +505,7 @@ footer .center{
 }
 body{
     /* overflow da togliere appena eliminati i bordi esterni dei container e delle row */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .debug .box{
