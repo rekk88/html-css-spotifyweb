@@ -16,16 +16,23 @@ h2 , h5{
     height: calc(100vh - 100px); /*100 viewport - altezza del footer*/
 }
 
+.btn{
+    background-color: unset;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 .display{
     display: none;
 }
 .playlist.display{
     display: none;
 }
-.mr-10{
-    /* margin-right: 0px; */
-}
-
 @media screen and (min-width: 576px) {
     .display{
         display: inline-block;
@@ -228,11 +235,21 @@ h2 , h5{
 /* main content top bar(.upgrade-bar) + main (gallery) */
 .upgrade-bar{
     height: 70px;
+    line-height: 70px;
+    text-align: right;
     position: fixed;
     top: 0px;
     z-index: 9; /*funziona anche con z-index = a quello di footer ma just in case lo metto a 9*/
     background-color:rgba(8, 11, 18, 0.5);
+
+    width: calc(100vw - 86px); /*mobile*/
 }
+@media screen and (min-width:576px) {
+    .upgrade-bar{
+        width: calc(100vw - 247px);
+    }
+}
+
 .gallery{
     /* min-height: 700px; */
     height: calc(100vh - 100px);
@@ -342,7 +359,7 @@ footer.row{
 .debug .upgrade-bar{
     /* background-color: grey; */
     border: 1px solid;
-    width: 100%;
+    /* width: 100%; */
 }
 body{
     /* overflow da togliere appena eliminati i bordi esterni dei container e delle row */
