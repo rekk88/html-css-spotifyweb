@@ -16,6 +16,28 @@ h2 , h5{
     height: calc(100vh - 100px); /*100 viewport - altezza del footer*/
 }
 
+.display{
+    display: none;
+}
+.playlist.display{
+    display: none;
+}
+.mr-10{
+    /* margin-right: 0px; */
+}
+
+@media screen and (min-width: 576px) {
+    .display{
+        display: inline-block;
+    }
+    .playlist.display{
+        display: flex;
+    }
+    /* .mr-10{
+        margin-right: initial;
+    } */
+}
+
 .main{
     height: 100%;
 }
@@ -29,7 +51,6 @@ h2 , h5{
     overflow:hidden;
 }
 
-
 /*regole desktop per la colonna di sinistra*/
 @media screen and (min-width: 576px) {
     .col-left{
@@ -37,7 +58,6 @@ h2 , h5{
         max-width: 230px;
         padding: 10px;
     }
-
 }
 
 
@@ -48,12 +68,18 @@ h2 , h5{
     padding: 5px;
 }
 
-.sidebar .sidebar-top nav{
+.sidebar .sidebar-top nav,
+.sidebar .sidebar-top .playlist-top div span,
+.sidebar .sidebar-top .playlist-bottom ul li{
     color: grey;
     font-weight: bold;
 }
+/* .sidebar .sidebar-top .playlist-top div span{
+    margin-left: 10px;
+} */
 .sidebar .sidebar-top nav img{
     filter: invert(20%);
+    /* margin-right: 10px; */
 }
 .sidebar .logo,
 .sidebar nav{
@@ -71,7 +97,12 @@ h2 , h5{
     width: 160px;
 }
 .sidebar .logo-mobile{
-    width: 100%;
+    /* width: 100%; */
+    text-align: center;
+
+}
+.sidebar .logo-mobile img{
+    height: 30px;
 }
 
 /* regole desktop */
@@ -85,6 +116,11 @@ h2 , h5{
 
     }
 
+    .sidebar-top,
+    .sidebar-bottom{
+        text-align: initial !important;
+    }
+
 }
 
 
@@ -94,6 +130,9 @@ h2 , h5{
     height: calc(100% - 100px);
     /* overflow: hidden; non dovrebbe essere necessario*/
     min-height: 380px;
+
+    /* addded */
+    text-align: center;
 }
 
 .sidebar-top > nav > ul {
@@ -109,11 +148,6 @@ h2 , h5{
     height: 30px;
     vertical-align: middle;
 }
-.sidebar-bottom{
-    height: 100px;
-    min-height: 100px;
-    background-color: black;
-}
 
 .playlist{
     display: flex;
@@ -127,16 +161,68 @@ h2 , h5{
     font-size: 40px;
     vertical-align: middle;
 }
+.playlist-top div > i.fas.fa-plus-square{
+    color: #ccc;
+}
 
 .playlist-bottom{
     /* height: 100px; */
     /* height: calc(100vh - 500px); */
-    height: 60%;
+    /* height: 60%; */
+    height: calc(100% - 260px);
     overflow-y: auto;
     overflow-x: hidden; /*al 99% da togliere una volta completata la media query per small */
-    background-color: saddlebrown;
-
+    /* background-color: saddlebrown; */
     /* flex-grow: 1; */
+}
+.playlist-bottom ul li{
+    line-height: 2;
+}
+
+.sidebar-bottom{
+    height: 100px;
+    min-height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* added */
+    text-align: center;
+}
+
+
+.sidebar-bottom .download{
+    height: 18%;
+    margin-bottom: 20px;
+}
+@media screen and (min-width:576px) {
+    .sidebar-bottom .download{
+        margin-bottom: 0px;
+    }
+}
+
+.sidebar-bottom .download img{
+    height: 100%;
+    vertical-align: middle;
+}
+.sidebar-bottom .download span{
+    font-size: 13px;
+    font-weight: bold;
+    color: grey;
+}
+.sidebar-bottom .line{
+    border-top: 1px solid grey;
+    margin: 10px 0px;
+}
+.sidebar-bottom .user{
+    height: 30%;
+}
+.sidebar-bottom .user img{
+    height: 100%;
+    border-radius: 50%;
+    background-color: grey;
+    padding: 0px 1px;
+    vertical-align: middle;
 }
 
 /* main content top bar(.upgrade-bar) + main (gallery) */
