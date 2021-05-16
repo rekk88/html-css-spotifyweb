@@ -246,7 +246,7 @@ h2 , h5{
 }
 @media screen and (min-width:576px) {
     .upgrade-bar{
-        width: calc(100vw - 247px);
+        width: calc(100vw - 230px);
     }
 }
 
@@ -324,19 +324,130 @@ h2 , h5{
 /* footer */
 footer.row{
     height: 100px;
+
+
     width: 100%;
     background-color: #282828;
     position: relative;
     /* position: fixed; */
     /* bottom: 0; */
     z-index: 10;
+    flex-direction: row;
+    /* flex-direction: column; */
+    
+    flex-wrap: nowrap;
 }
 
+/* idea per dopo  
+ @media screen and (min-width:320px) {  
+    footer.row{
+        height: 100px;
+        flex-direction: row;
+    }
 
+} */
+footer .center .top,
+footer .center .bottom{
+    height: 50%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+footer .center .top{
+   
+    width: max-content;
+    margin: 0 auto;
+    font-size: 22px;
+}
+footer .center .top .fas.fa-caret-left{
+    margin-left: 20px;
+}
+footer .center .top .fas.fa-caret-right{
+    margin-right: 20px;
+}
 
+footer .center .top .far.fa-play-circle{
+    font-size: 30px;
+    margin: 0px 40px;
+}
+footer .center .bottom .timeline,
+footer .right .timeline{
+    /* border:2px solid grey; */
+    width: 50%;
+    height: 3px;
+    background-color: white;
+    position: relative;
+}
+footer .center .bottom .timeline span,
+footer .right .timeline span{
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: hotpink;
+}
+footer .left,
+footer .right{
+    height: 100%;
+    border: 1px solid;
+    background-color: yellowgreen;
+    /* flex-basis: calc((100vw / 2) - 110px); */
+    /* flex-basis: 180px; */
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+}
+footer .left img{
+    height: 100%;
+    padding: 18px 5px;
+}
+footer .left .titolo{
+    /* align-self: center; */
+    margin-right: 20px;
+}
+footer .left .titolo > div:nth-child(2) {
+        font-size: 14px;
+    }
+footer .right{
+    justify-content: flex-end;
+}
+/* footer .left .icons{
+    align-self: center;
+} */
+footer .center{
+    flex-basis: 50%;
+}
+@media screen and (max-width:515px) {
+    footer .left{
+        display: none;
+    }
+    footer .center{
+        flex-grow: 1;
+    }
+    footer .icons{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    footer .right .timeline{
+        transform: rotate(90deg);
+        
+    }
+}
 
 /* debug */
+
+.debug .left,
+.debug .right{
+    /* flex-basis: 200px; */
+}
+
+.debug .center{
+    /* flex-grow: 1; */
+    background-color: brown;
+    height: 100%;
+}
 
 .debug .row.sidebar{
     /* background-color: red; */
