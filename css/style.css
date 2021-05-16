@@ -258,6 +258,7 @@ h2 , h5{
     text-transform: uppercase;
     line-height: 4;
 }
+
 .gallery .row.recently,
 .gallery .row.mix,
 .gallery .row.artisti{
@@ -274,6 +275,25 @@ h2 , h5{
 .gallery .row.artisti img{
     border-radius: 50%;
 }
+
+.nested-box{
+    min-height: 150px;
+    /* width: 170px; */
+    /* width: calc(100% / 6); */
+    width: calc(100% / 2); /*mobile*/
+    min-width: 170px;
+    background-color: transparent;
+    padding: 10px;
+
+}
+
+
+@media screen and (min-width:576px) {
+    .nested-box{
+            width: calc(100% / 6);
+        }
+}
+
 .gallery .nested-box>img{
     width: 100%;
 }
@@ -340,11 +360,11 @@ body{
 }
 
 .debug .nested-box{
-    min-height: 150px;
+    /* min-height: 150px; */
     /* width: 170px; */
-    width: calc(100% / 6);
+    /* width: calc(100% / 6);
     min-width: 170px;
     background-color: transparent;
-    padding: 10px;
+    padding: 10px; */
 
 }
