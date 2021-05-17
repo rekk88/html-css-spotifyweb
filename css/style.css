@@ -27,7 +27,25 @@ h2 , h5{
     text-transform: uppercase;
     text-decoration: none;
 }
+.text-over:hover{
+    color: white !important;
+}
 
+.green{
+    /* display: none; */
+    display: block;
+    border-color: #141922;
+    visibility: hidden;
+    border-bottom: 3px solid;
+    /* display: block; */
+    max-width: 30px;   
+    margin: 0 auto;
+}
+.text-over:hover .green{
+    /* display: block; */
+    border-color: green;
+    visibility: visible;
+}
 .display{
     display: none;
 }
@@ -79,7 +97,8 @@ h2 , h5{
 }
 .sidebar .sidebar-top nav,
 .sidebar .sidebar-top .playlist-top div span,
-.sidebar .sidebar-top .playlist-bottom ul li{
+.sidebar .sidebar-top .playlist-bottom ul li,
+.gallery nav.row ul > li{
     color: grey;
     font-weight: bold;
 }
@@ -306,13 +325,15 @@ h2 , h5{
     justify-content: center;
 }
 .gallery nav.row ul{
+    font-size: 14px;
     text-align: center;
 }
 .gallery nav.row ul>li{
     display: inline-block;
     margin: 0 10px;
     text-transform: uppercase;
-    line-height: 4;
+    /* line-height: 4; */
+    padding: 10px 0px;
 }
 
 .gallery .row.recently,
@@ -337,19 +358,25 @@ h2 , h5{
     /* width: 170px; */
     /* width: calc(100% / 6); */
     width: calc(100% / 2); /*mobile*/
-    min-width: 170px;
+    /* min-width: 170px; */
     background-color: transparent;
     padding: 10px;
 
 }
 
 
-@media screen and (min-width:576px) {
+@media screen and (min-width:768px) {
     .nested-box{
-            width: calc(100% / 6);
+            width: calc(100% / 3);
+            /* min-width: 170px; */
         }
 }
-
+@media screen and (min-width:1024px) {
+    .nested-box{
+        width: calc(100% / 6);
+        /* min-width: 170px; */
+    }
+}
 .gallery .nested-box img{
     width: 100%;
 }
