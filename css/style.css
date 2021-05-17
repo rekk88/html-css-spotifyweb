@@ -414,14 +414,55 @@ footer .left .titolo > div:nth-child(2) {
 footer .right{
     justify-content: flex-end;
 }
-/* footer .left .icons{
-    align-self: center;
-} */
 footer .center{
     flex-basis: 50%;
 }
 
 
+
+footer .left{
+    display: none;
+}
+footer .right{
+    flex-basis: 50%;
+}
+footer .right .icons i{
+    display: block;
+}
+footer .right .timeline{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+@media screen and (min-width:440px) and (max-width:559px) {
+
+    footer .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .left .titolo{
+        margin-right: 0;
+        text-align: center;
+    }
+    footer .left img{
+        display: none;
+    }
+}
+@media screen and (min-width:560px){
+    footer .left{
+        display: flex;
+    }
+    footer .right{
+        flex-basis: 25%;
+    }
+    footer .right .icons i{
+        display: initial;
+    }
+    footer .right .timeline{
+        margin: 0;
+    }
+}
 /*         cantiere aperto / zona esperimenti           */
 
 
