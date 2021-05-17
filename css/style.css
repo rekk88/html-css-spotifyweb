@@ -252,6 +252,8 @@ h2 , h5{
     }
 }
 
+
+/*                  GALLERY              */
 .gallery{
     /* min-height: 700px; */
     height: calc(100vh - 100px);
@@ -272,23 +274,29 @@ h2 , h5{
 .gallery .layover .btn-over{
     position: absolute;
     top: 0;
-    color: red;
     height: calc(100% + 4px);
     width: 100%;
-    background-color: yellow;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 50px; /*dimensione del play button*/
 
-
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     display: none;
 
 }
+.gallery .row.artisti .layover .btn-over{
+    border-radius: 50%;
+}
+.gallery .layover .btn-over i{
+    cursor: pointer;
+}
 .gallery .layover:hover .btn-over{
     display: flex;
 }
+
 .gallery .text{
     height: 35px;
+    margin-top: 5px;
 }
 .gallery .row>h2,
 .gallery .row>h5{
