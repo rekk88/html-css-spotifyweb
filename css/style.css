@@ -32,18 +32,13 @@ h2 , h5{
 }
 
 .green{
-    /* display: none; */
     display: block;
-    border-color: #141922;
     visibility: hidden;
-    border-bottom: 3px solid;
-    /* display: block; */
+    border-bottom: 3px solid green;
     max-width: 30px;   
     margin: 0 auto;
 }
 .text-over:hover .green{
-    /* display: block; */
-    border-color: green;
     visibility: visible;
 }
 .display{
