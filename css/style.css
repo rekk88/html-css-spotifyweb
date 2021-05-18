@@ -124,7 +124,10 @@ h2 , h5{
     color: white !important;
 }
 
-.sidebar .logo,
+.playlist-top:hover  i.fas.fa-plus-square,
+.playlist-top:hover span{
+    color: white !important;
+}
 .sidebar nav{
     margin-bottom: 5px;
 }
