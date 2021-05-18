@@ -27,10 +27,10 @@ h2 , h5{
     text-transform: uppercase;
     text-decoration: none;
 }
-.text-over:hover{
-    color: white !important;
-}
 
+.text-hover img:hover{
+    filter: none !important;
+}
 .green{
     display: block;
     visibility: hidden;
@@ -41,6 +41,21 @@ h2 , h5{
 .text-over:hover .green{
     visibility: visible;
 }
+
+.sidebar-top > nav > ul li .green-left{
+    display: inline-block;
+    visibility: hidden;
+    border-left: 3px solid green;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    /* max-width: 30px;    */
+    /* margin: 0 auto; */
+}
+.sidebar-top > nav > ul li:hover .green-left{
+    visibility: visible;
+} 
+
 .display{
     display: none;
 }
@@ -97,13 +112,18 @@ h2 , h5{
     color: grey;
     font-weight: bold;
 }
-/* .sidebar .sidebar-top .playlist-top div span{
-    margin-left: 10px;
-} */
 .sidebar .sidebar-top nav img{
     filter: invert(20%);
-    /* margin-right: 10px; */
 }
+
+.sidebar nav li:hover img{
+    filter: none;
+}
+
+.text-over:hover{
+    color: white !important;
+}
+
 .sidebar .logo,
 .sidebar nav{
     margin-bottom: 5px;
